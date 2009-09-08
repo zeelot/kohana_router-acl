@@ -1,0 +1,6 @@
+#Router-ACL
+
+This module will simply check the current route before the controller is loaded
+and if an array of 'allowed_roles' is defined in the route definition it will
+check if the current user has any of the allowed roles and throw a 403 error if
+he doesn't...
