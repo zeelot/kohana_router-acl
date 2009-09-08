@@ -34,7 +34,7 @@ class simple_acl_hook {
 	{
 		$allowed = FALSE;
 		$allowed_roles = Kohana::config('routes.'.Router::$current_route.'.allowed_roles');
-		if($allowed_roles === NULL)
+		if($allowed_roles == FALSE)
 		{
 			//everyone is allowed to access this route
 			$allowed = TRUE;
